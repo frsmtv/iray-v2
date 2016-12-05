@@ -3,7 +3,7 @@
   "description": "",
   "main": "",
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/frsmtv/iray-v2",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -13,9 +13,9 @@
   ],
   "dependencies": {
     "jquery": "^3.1.1",
-    "animatedmodal": "*",
-    "animate.css": "animate-css#^3.5.2",
-    "scrollme": "^1.1.0",
-    "materialize": "^0.97.8"
-  }
+    "animate.css": "animate-css#^3.5.2"
+  },
+  "authors": [
+    "frsmtv <fsimitchiev@gmail.com>"
+  ]
 }
