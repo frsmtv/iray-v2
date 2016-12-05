@@ -1,0 +1,31 @@
+#homePage {
+  background: url("../img/iray-back.jpg");
+  height: 100%;
+}
+#homeContainer {
+  height: 100%;
+  #homeNav {
+    position: fixed;
+    top: 0;
+    background: url("../img/iray-back-dark.jpg");
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    .logoSquare {
+      width: 100px;
+      height: 100px;
+      margin: 1%;
+    }
+  }
+  #news {
+    margin-top: 20%;
+    color: #000;
+    text-align: justify;
+    font-size: 2rem;
+    padding: 2%;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url("../img/iray-logo-blue.png");
+  }
+}

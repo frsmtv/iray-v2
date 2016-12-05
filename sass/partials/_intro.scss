@@ -1,0 +1,34 @@
+#introBody {
+    background: url("../img/iray-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    #introContainer {
+      color: #fff;
+      text-align: center;
+      text-transform: uppercase;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 15%;
+      h1 {
+        font-size: 6rem;
+        margin-bottom: 1%;
+      }
+      h2 {
+        font-size: 3rem;
+        margin-top: 6%;
+      }
+      i {
+        font-size: 1rem;
+        margin-bottom: 0;
+      }
+      .fa {
+        font-size: 4rem;
+      }
+      #logo {
+        .logoSquare {
+          width: 50px;
+        }
+      }
+    }
+  }
