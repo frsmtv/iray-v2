@@ -19,3 +19,102 @@ a {
   text-decoration: none;
 }
 
+#homeBody {
+  margin: 0;
+}
+#homePage {
+  background: url("../img/iray-back.jpg");
+  height: 100%;
+}
+#homeContainer {
+  height: 100%;
+  #theMusicians {
+    width: 80%;
+    color: #000;
+    font-size: 1rem;
+    padding: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    background: url("../img/iray-back.jpg");
+    //-webkit-box-shadow: 20px 20px 10px 0 #000;
+    //box-shadow: 20px 20px 10px 0 #000;
+    .musician {
+      margin-top: 8%;
+      margin-right: 2%;
+      text-align: justify;
+      img {
+        width: 100%;
+      }
+      h3 {
+        text-transform: uppercase;
+        span {
+          font-size: 0.9rem;
+        }
+      }
+    }
+    #elvire {
+      margin-right: 0!important;
+    }
+  }
+  #homeNav {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    //background: url("../img/iray-back-dark.jpg");
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    .logoSquare {
+      width: 40px;
+      height: 40px;
+      margin: 1%;
+      -webkit-transition: all 200ms ease-in-out;
+      -moz-transition: all 200ms ease-in-out;
+      -ms-transition: all 200ms ease-in-out;
+      -o-transition: all 200ms ease-in-out;
+      transition: all 200ms ease-in-out;
+      &:hover {
+        -webkit-box-shadow: 5px 5px 10px 0 #000;
+        box-shadow: 5px 5px 10px 0 #000;
+      }
+    }
+  }
+  #menuItemsReveal {
+    z-index: 1000;
+    #aboutLink, #mediasLink, #contactLink {
+      display: none;
+      font-size: 2rem;
+      text-transform: uppercase;
+      color: #fff;
+      background: #000;
+      position: absolute;
+      top: 70px;
+      left: 43%;
+    }
+  }
+  #news, #about {
+    margin-top: 15%;
+    margin-bottom: 5%;
+    color: #000;
+    text-align: justify;
+    font-size: 1.3rem;
+    padding: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    background: url("../img/iray-back.jpg");
+
+  }
+  #news {
+    width: 400px;
+    -webkit-box-shadow: 20px 20px 10px 0 #000;
+    box-shadow: 20px 20px 10px 0 #000;
+  }
+  #about {
+    width: 80%;
+  }
+}
