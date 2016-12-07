@@ -14,18 +14,48 @@ $(document).ready(function(){
         }
     });
 
-    // **** Menu items reveal ****
+    // **** HOME PAGE ****
+
+    // **** HOME PAGE Menu items reveal ****
+    // **** About link ****
     $('#logoSquareBlue').mouseover(function() {
-        $('#aboutLink').show();
+        $('#aboutLink').fadeIn(300);
     });
     $('#logoSquareBlue').mouseleave(function() {
-        $('#aboutLink').hide();
+        $('#aboutLink').fadeOut(300);
     });
 
     $('#logoSquareBlue').click(function() {
         $('#news').addClass("animated fadeOutDown");
-        $('#aboutLink').addClass("animated fadeOutUp");
+        $('#aboutLink').addClass("animated fadeOut");
     });
+
+    // **** Medias link ****
+    $('#logoSquareMagenta').mouseover(function() {
+        $('#mediasLink').fadeIn(300);
+    });
+    $('#logoSquareMagenta').mouseleave(function() {
+        $('#mediasLink').fadeOut(300);
+    });
+
+    $('#logoSquareMagenta').click(function() {
+        $('#news').addClass("animated fadeOutDown");
+        $('#mediasLink').addClass("animated fadeOut");
+    });
+
+    // **** Contact link ****
+    $('#logoSquareYellow').mouseover(function() {
+        $('#contactLink').fadeIn(300);
+    });
+    $('#logoSquareYellow').mouseleave(function() {
+        $('#contactLink').fadeOut(300);
+    });
+
+    $('#logoSquareYellow').click(function() {
+        $('#news').addClass("animated fadeOutDown");
+        $('#contactLink').addClass("animated fadeOut");
+    });
+
 
 
 
