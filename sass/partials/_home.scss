@@ -6,15 +6,32 @@
   height: 100%;
   #homeNav {
     position: fixed;
+    z-index: 999;
     top: 0;
-    background: url("../img/iray-back-dark.jpg");
+    //background: url("../img/iray-back-dark.jpg");
     display: flex;
     justify-content: space-around;
     width: 100%;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
     .logoSquare {
-      width: 100px;
-      height: 100px;
+      width: 40px;
+      height: 40px;
       margin: 1%;
+    }
+  }
+  #menuItemsReveal {
+    z-index: 1000;
+    #aboutLink {
+      display: none;
+      font-size: 2rem;
+      text-transform: uppercase;
+      position: absolute;
+      top: 100px;
+      left: 45%;
     }
   }
   #news {
