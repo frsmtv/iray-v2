@@ -28,6 +28,8 @@ $(document).ready(function(){
     $('#logoSquareBlue').click(function() {
         $('#news').addClass("animated fadeOutDown");
         $('#aboutLink').addClass("animated fadeOut");
+        $('#about').addClass("animated fadeOutDown");
+
     });
 
     // **** Medias link ****
@@ -55,6 +57,8 @@ $(document).ready(function(){
         $('#news').addClass("animated fadeOutDown");
         $('#contactLink').addClass("animated fadeOut");
     });
+
+    // **** ABOUT ****
 
 
 

@@ -36,26 +36,26 @@
     z-index: 1000;
     #aboutLink, #mediasLink, #contactLink {
       display: none;
-      font-size: 2.5rem;
+      font-size: 2rem;
       text-transform: uppercase;
       color: #fff;
       background: #000;
       position: absolute;
-      top: 80px;
+      top: 70px;
       left: 43%;
     }
   }
-  #news {
-    margin-top: 20%;
+  #news, #about {
+    margin-top: 15%;
     margin-bottom: 5%;
     color: #000;
     text-align: justify;
-    font-size: 2rem;
+    font-size: 1.3rem;
     padding: 2%;
     width: 400px;
     margin-left: auto;
     margin-right: auto;
-    background: url("../img/iray-logo-blue.png");
+    background: url("../img/iray-back.jpg");
     -webkit-box-shadow: 20px 20px 10px 0 #000;
     box-shadow: 20px 20px 10px 0 #000;
   }
