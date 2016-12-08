@@ -18,12 +18,12 @@ $(document).ready(function(){
 
     // **** HOME PAGE Menu items reveal ****
     // **** About link ****
-    $('#logoSquareBlue').mouseover(function() {
-        $('#aboutLink').fadeIn(300);
-    });
-    $('#logoSquareBlue').mouseleave(function() {
-        $('#aboutLink').fadeOut(300);
-    });
+    // $('#logoSquareBlue').mouseover(function() {
+    //     $('#aboutLink').fadeIn(300);
+    // });
+    // $('#logoSquareBlue').mouseleave(function() {
+    //     $('#aboutLink').fadeOut(300);
+    // });
 
     $('#logoSquareBlue').click(function() {
         $('#news').addClass("animated fadeOutDown");
@@ -32,13 +32,13 @@ $(document).ready(function(){
 
     });
 
-    // **** Medias link ****
-    $('#logoSquareMagenta').mouseover(function() {
-        $('#mediasLink').fadeIn(300);
-    });
-    $('#logoSquareMagenta').mouseleave(function() {
-        $('#mediasLink').fadeOut(300);
-    });
+    // // **** Medias link ****
+    // $('#logoSquareMagenta').mouseover(function() {
+    //     $('#mediasLink').fadeIn(300);
+    // });
+    // $('#logoSquareMagenta').mouseleave(function() {
+    //     $('#mediasLink').fadeOut(300);
+    // });
 
     $('#logoSquareMagenta').click(function() {
         $('#news').addClass("animated fadeOutDown");
@@ -46,12 +46,12 @@ $(document).ready(function(){
     });
 
     // **** Contact link ****
-    $('#logoSquareYellow').mouseover(function() {
-        $('#contactLink').fadeIn(300);
-    });
-    $('#logoSquareYellow').mouseleave(function() {
-        $('#contactLink').fadeOut(300);
-    });
+    // $('#logoSquareYellow').mouseover(function() {
+    //     $('#contactLink').fadeIn(300);
+    // });
+    // $('#logoSquareYellow').mouseleave(function() {
+    //     $('#contactLink').fadeOut(300);
+    // });
 
     $('#logoSquareYellow').click(function() {
         $('#news').addClass("animated fadeOutDown");
