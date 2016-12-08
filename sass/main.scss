@@ -36,8 +36,6 @@ a {
     margin-left: auto;
     margin-right: auto;
     background: url("../img/iray-back.jpg");
-    //-webkit-box-shadow: 20px 20px 10px 0 #000;
-    //box-shadow: 20px 20px 10px 0 #000;
     .musician {
       width: 90%;
       margin-top: 8%;
@@ -52,6 +50,24 @@ a {
         span {
           font-size: 0.9rem;
         }
+      }
+    }
+    i {
+      float: right;
+      font-size: 2rem;
+      -webkit-transition: all 200ms ease-in-out;
+      -moz-transition: all 200ms ease-in-out;
+      -ms-transition: all 200ms ease-in-out;
+      -o-transition: all 200ms ease-in-out;
+      transition: all 200ms ease-in-out;
+      &:hover {
+        cursor: pointer;
+        opacity: .6;
+        -moz-transform: scale(1) rotate(0deg) translateX(0px) translateY(-3px);
+        -webkit-transform: scale(1) rotate(0deg) translateX(0px) translateY(-3px);
+        -o-transform: scale(1) rotate(0deg) translateX(0px) translateY(-3px);
+        -ms-transform: scale(1) rotate(0deg) translateX(0px) translateY(-3px);
+        transform: scale(1) rotate(0deg) translateX(0px) translateY(-3px);
       }
     }
   }
@@ -78,7 +94,7 @@ a {
       -o-transition: all 200ms ease-in-out;
       transition: all 200ms ease-in-out;
       &:hover {
-        opacity: .6;
+        opacity: .8;
       }
     }
   }
@@ -100,12 +116,11 @@ a {
     margin-bottom: 5%;
     color: #000;
     text-align: justify;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     padding: 2%;
     margin-left: auto;
     margin-right: auto;
     background: url("../img/iray-back.jpg");
-
   }
   #news {
     width: 400px;

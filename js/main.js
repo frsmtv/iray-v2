@@ -58,7 +58,10 @@ $(document).ready(function(){
         $('#contactLink').addClass("animated fadeOut");
     });
 
-    // **** ABOUT ****
+    // **** SCROLL TO TOP ****
+    $('#topBtn').click(function() {
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+    });
 
 
 
