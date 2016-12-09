@@ -14,16 +14,7 @@ $(document).ready(function(){
         }
     });
 
-    // **** HOME PAGE ****
-
-    // **** HOME PAGE Menu items reveal ****
-    // **** About link ****
-    // $('#logoSquareBlue').mouseover(function() {
-    //     $('#aboutLink').fadeIn(300);
-    // });
-    // $('#logoSquareBlue').mouseleave(function() {
-    //     $('#aboutLink').fadeOut(300);
-    // });
+    // **** MENU ****
 
     $('#logoSquareBlue').click(function() {
         $('#news').addClass("animated fadeOutDown");
@@ -32,26 +23,12 @@ $(document).ready(function(){
 
     });
 
-    // // **** Medias link ****
-    // $('#logoSquareMagenta').mouseover(function() {
-    //     $('#mediasLink').fadeIn(300);
-    // });
-    // $('#logoSquareMagenta').mouseleave(function() {
-    //     $('#mediasLink').fadeOut(300);
-    // });
 
     $('#logoSquareMagenta').click(function() {
         $('#news').addClass("animated fadeOutDown");
         $('#mediasLink').addClass("animated fadeOut");
     });
 
-    // **** Contact link ****
-    // $('#logoSquareYellow').mouseover(function() {
-    //     $('#contactLink').fadeIn(300);
-    // });
-    // $('#logoSquareYellow').mouseleave(function() {
-    //     $('#contactLink').fadeOut(300);
-    // });
 
     $('#logoSquareYellow').click(function() {
         $('#news').addClass("animated fadeOutDown");
