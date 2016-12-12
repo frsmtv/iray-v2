@@ -8,6 +8,7 @@
 html {
   height: 100%;
   font-size: 16px;
+  line-height: 2;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,29 +18,33 @@ html {
 a {
   color: inherit;
   text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  &:hover {
+    opacity: .5;
+  }
 }
 
-#homeBody {
+#homeBody, #aboutBody, #mediasBody {
   margin: 0;
   footer {
+    display: none;
     position: absolute;
     bottom: 0;
     width: 100%;
   }
 }
-#homePage {
-  background: url("../img/iray-back.jpg");
-  background-repeat: repeat-x;
+#homePage, #aboutPage {
   height: 100%;
   img {
     display: block;
-    margin: 20% auto 0 auto;
-    width: 80%;
+    margin: 0 auto 0 auto;
+    width: 100%;
   }
-}
-#aboutPage {
-  background: url("../img/iray-back.jpg");
-  background-repeat: repeat-x;
 }
 #homeContainer {
   height: 100%;
@@ -50,12 +55,9 @@ a {
     padding: 2%;
     margin-left: auto;
     margin-right: auto;
-    //background: url("../img/iray-back.jpg");
     .musician {
       width: 90%;
-      margin-top: 8%;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 4% auto 4% auto;
       text-align: justify;
       img {
         width: 100%;
@@ -93,6 +95,9 @@ a {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    font-size: 0.8rem;
+    text-align: justify;
+    color: #fff;
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
     -ms-transition: all 1s ease-in-out;
@@ -113,36 +118,26 @@ a {
       }
     }
   }
-  //#menuItemsReveal {
-  //  z-index: 1000;
-  //  #aboutLink, #mediasLink, #contactLink {
-  //    display: none;
-  //    font-size: 2rem;
-  //    text-transform: uppercase;
-  //    color: #fff;
-  //    background: #000;
-  //    position: absolute;
-  //    top: 70px;
-  //    left: 43%;
-  //  }
-  //}
   #about{
-    width: 80%;
+    width: 90%;
     h2 {
       text-transform: uppercase;
+    }
+    img {
+      display: block;
+      margin: 0 auto 0 auto;
+      width: 100%;
     }
     #irayBio {
       width: 100%;
     }
-    margin-top: 15%;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     color: #000;
     text-align: justify;
     font-size: 1.2rem;
     padding: 2%;
     margin-left: auto;
     margin-right: auto;
-    //background: url("../img/iray-back.jpg");
   }
   #newsConcerts {
     h2 {
@@ -150,17 +145,41 @@ a {
     }
     margin:5% auto 5% auto;
     width: 80%;
-    //display: flex;
-    -webkit-box-shadow: 20px 20px 10px 0 #000;
-    box-shadow: 20px 20px 10px 0 #000;
     #news {
-      width: 90%;
+      width: 95%;
       text-align: justify;
       margin: 0 0 10% 0;
+      img {
+        float: right;
+        width: 30%;
+        border: 1px solid #000000;
+      }
+      a {
+        border: 1px solid #000000;
+        padding: 8px;
+        display: inline-block;
+        margin-right: 1%;
+      }
     }
     #concerts {
-      //border-top: 4px solid #000;
       width: 95%;
+    }
+  }
+  #medias {
+    width: 100%;
+    #music {
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 4%;
+      margin-bottom: 4%;
+    }
+    #videos > iframe {
+      display: block;
+      width:90%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 4%;
     }
   }
 }
