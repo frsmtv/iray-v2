@@ -1,16 +1,25 @@
 $(document).ready(function(){
 
 
-    // **** Navbar fadeOut on scroll ****
+    // **** Navbar reduce on scroll ****
     var scroll_start = 0;
     var startchange = $('body');
     var offset = startchange.offset();
     $(document).scroll(function() {
         scroll_start = $(this).scrollTop();
         if(scroll_start > offset.top) {
-            $('#homeNav').addClass("animated fadeOutUp");
+            $('.logoSquare').css({
+                width: '25px',
+                height: '25px',
+                'font-size': '0.6rem'
+            });
+
         } else {
-            $('#homeNav').removeClass("animated fadeOutUp").addClass("animated fadeInDown");
+            $('.logoSquare').css({
+                width: '50px',
+                height: '50px',
+                'font-size': '1rem'
+            });
         }
     });
 
@@ -40,6 +49,20 @@ $(document).ready(function(){
         $("html, body").animate({ scrollTop: 0 }, "slow");
     });
 
+    // **** MEDIA SECTIONS REVEAL ****
+    $('#audioLink').click(function() {
+        $('#videos').hide();
+        $('#music').fadeIn();
+
+        // ADD AUTO SCROLL TOP !
+    });
+
+    $('#videoLink').click(function() {
+        $('#music').hide();
+        $('#videos').fadeIn();
+
+        // ADD AUTO SCROLL TOP !
+    });
 
 
 

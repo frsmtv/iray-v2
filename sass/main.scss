@@ -108,13 +108,14 @@ a {
       height: 50px;
       margin: 1%;
       text-align: center;
-      -webkit-transition: all 200ms ease-in-out;
-      -moz-transition: all 200ms ease-in-out;
-      -ms-transition: all 200ms ease-in-out;
-      -o-transition: all 200ms ease-in-out;
-      transition: all 200ms ease-in-out;
+      -webkit-transition: all 400ms ease-in-out;
+      -moz-transition: all 400ms ease-in-out;
+      -ms-transition: all 400ms ease-in-out;
+      -o-transition: all 400ms ease-in-out;
+      transition: all 400ms ease-in-out;
       &:hover {
         opacity: .8;
+        color: #000;
       }
     }
   }
@@ -168,11 +169,15 @@ a {
   #medias {
     width: 100%;
     #music {
+      display: none;
       width: 50%;
       margin-left: auto;
       margin-right: auto;
       margin-top: 4%;
       margin-bottom: 4%;
+    }
+    #videos {
+      display: none;
     }
     #videos > iframe {
       display: block;
@@ -180,6 +185,17 @@ a {
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 4%;
+    }
+  }
+  #mediaSelect {
+    width: 40%;
+    margin: 2% auto;
+    display: flex;
+    justify-content: space-around;
+    a {
+      display: block;
+      border: 1px solid #000;
+      padding: 0 4%;
     }
   }
 }
