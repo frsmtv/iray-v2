@@ -11,38 +11,43 @@ $(document).ready(function(){
             $('.logoSquare').css({
                 width: '25px',
                 height: '25px',
-                'font-size': '0.6rem'
-            });
+                'font-size': '0.6rem',
+                color: 'rgba(0, 0, 0, 0)'
+        });
 
         } else {
             $('.logoSquare').css({
-                width: '50px',
-                height: '50px',
-                'font-size': '1rem'
+                width: '60px',
+                height: '60px',
+                'font-size': '0.8rem',
+                color: '#fff'
             });
         }
     });
 
-    // **** MENU ****
-
-    $('#logoSquareBlue').click(function() {
-        $('#news').addClass("animated fadeOutDown");
-        $('#aboutLink').addClass("animated fadeOut");
-        $('#about').addClass("animated fadeOutDown");
-
-    });
 
 
-    $('#logoSquareMagenta').click(function() {
-        $('#news').addClass("animated fadeOutDown");
-        $('#mediasLink').addClass("animated fadeOut");
-    });
 
-
-    $('#logoSquareYellow').click(function() {
-        $('#news').addClass("animated fadeOutDown");
-        $('#contactLink').addClass("animated fadeOut");
-    });
+    // // **** MENU ****
+    //
+    // $('#logoSquareBlue').click(function() {
+    //     $('#news').addClass("animated fadeOutDown");
+    //     $('#aboutLink').addClass("animated fadeOut");
+    //     $('#about').addClass("animated fadeOutDown");
+    //
+    // });
+    //
+    //
+    // $('#logoSquareMagenta').click(function() {
+    //     $('#news').addClass("animated fadeOutDown");
+    //     $('#mediasLink').addClass("animated fadeOut");
+    // });
+    //
+    //
+    // $('#logoSquareYellow').click(function() {
+    //     $('#news').addClass("animated fadeOutDown");
+    //     $('#contactLink').addClass("animated fadeOut");
+    // });
 
     // **** SCROLL TO TOP ****
     $('#topBtn').click(function() {
