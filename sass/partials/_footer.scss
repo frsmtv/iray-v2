@@ -1,10 +1,11 @@
 footer {
+  position: relative;
+  display: block;
+  width: 35%;
   background: #fff;
   text-align: center;
-  font-size: 0.8rem;
-  margin-bottom: 0;
-  width: 35%;
-  margin: 5% auto 0 auto;
+  font-size: 0.7rem;
+  margin: 5% auto 1% auto;
   p {
     padding: 2%;
     border: 1px dashed #000000;

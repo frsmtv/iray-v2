@@ -31,12 +31,6 @@ a {
 
 #homeBody, #aboutBody, #mediasBody {
   margin: 0;
-  footer {
-    display: none;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
 }
 #homePage, #aboutPage {
   height: 100%;
@@ -48,6 +42,11 @@ a {
 }
 #homeContainer {
   height: 100%;
+  #menuTextReveal {
+    text-transform: uppercase;
+    position: absolute;
+    top: 20%;
+  }
   #theMusicians {
     width: 80%;
     color: #000;
@@ -196,6 +195,34 @@ a {
       display: block;
       border: 1px solid #000;
       padding: 0 4%;
+    }
+  }
+  #contact {
+    text-align: center;
+    h2, h3 {
+      text-align: center;
+      text-transform: uppercase;
+    }
+    ul {
+      list-style: none;
+      text-align: center;
+      text-transform: uppercase;
+      i {
+        margin: 0 1%;
+      }
+    }
+    #socialIcons {
+      display: flex;
+      justify-content: space-between;
+      width: 15%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 4%;
+      padding: 0;
+    }
+    #peopleWeLike {
+      margin-top: 4%;
+      text-align: center;
     }
   }
 }

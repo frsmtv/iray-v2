@@ -26,29 +26,6 @@ $(document).ready(function(){
     });
 
 
-
-
-    // // **** MENU ****
-    //
-    // $('#logoSquareBlue').click(function() {
-    //     $('#news').addClass("animated fadeOutDown");
-    //     $('#aboutLink').addClass("animated fadeOut");
-    //     $('#about').addClass("animated fadeOutDown");
-    //
-    // });
-    //
-    //
-    // $('#logoSquareMagenta').click(function() {
-    //     $('#news').addClass("animated fadeOutDown");
-    //     $('#mediasLink').addClass("animated fadeOut");
-    // });
-    //
-    //
-    // $('#logoSquareYellow').click(function() {
-    //     $('#news').addClass("animated fadeOutDown");
-    //     $('#contactLink').addClass("animated fadeOut");
-    // });
-
     // **** SCROLL TO TOP ****
     $('#topBtn').click(function() {
         $("html, body").animate({ scrollTop: 0 }, "slow");
@@ -58,15 +35,13 @@ $(document).ready(function(){
     $('#audioLink').click(function() {
         $('#videos').hide();
         $('#music').fadeIn();
-
-        // ADD AUTO SCROLL TOP !
+        $('html,body').animate({ scrollTop: 9999 }, 'slow');
     });
 
     $('#videoLink').click(function() {
         $('#music').hide();
         $('#videos').fadeIn();
-
-        // ADD AUTO SCROLL TOP !
+        $('html,body').animate({ scrollTop: 9999 }, 'slow');
     });
 
 
