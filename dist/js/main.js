@@ -13,7 +13,9 @@ $(document).ready(function(){
                 height: '25px',
                 'font-size': '0.6rem',
                 color: 'rgba(0, 0, 0, 0)'
-        });
+            });
+            // home square color switch
+            $('#logoSquareBlack').attr('src', 'img/iray-logo-black.png')
 
         } else {
             $('.logoSquare').css({
@@ -22,8 +24,11 @@ $(document).ready(function(){
                 'font-size': '0.8rem',
                 color: '#fff'
             });
+            $('#logoSquareBlack').attr('src', 'img/iray-logo-white.png')
         }
     });
+
+
 
 
     // **** SCROLL TO TOP ****
@@ -43,8 +48,6 @@ $(document).ready(function(){
         $('#videos').fadeIn();
         $('html,body').animate({ scrollTop: 9999 }, 'slow');
     });
-
-
 
 
 });

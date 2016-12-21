@@ -96,6 +96,7 @@ a {
     width: 100%;
     font-size: 0.8rem;
     text-align: justify;
+    line-height: 1.2;
     color: #fff;
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
@@ -105,7 +106,7 @@ a {
     .logoSquare {
       width: 60px;
       height: 60px;
-      margin: 1%;
+      margin: 1% 1% 10px 1%;
       text-align: center;
       -webkit-transition: all 400ms ease-in-out;
       -moz-transition: all 400ms ease-in-out;
@@ -204,10 +205,14 @@ a {
   #contact {
     text-align: center;
     h2, h3 {
+      display: inline-block;
       text-align: center;
       text-transform: uppercase;
+      padding: 0 2%;
+      border: 1px solid #000;
     }
     ul {
+      font-size: 1.1rem;
       list-style: none;
       text-align: center;
       text-transform: uppercase;
@@ -223,6 +228,7 @@ a {
       margin-right: auto;
       margin-top: 4%;
       padding: 0;
+      font-size: 1.4rem;
     }
     #peopleWeLike {
       margin-top: 4%;
