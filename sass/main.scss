@@ -1,4 +1,4 @@
-@import 'partials/_intro';
+//@import 'partials/_intro';
 @import 'partials/_nav';
 @import 'partials/_home';
 @import 'partials/_footer';
@@ -28,6 +28,26 @@ a {
     opacity: .5;
   }
 }
+#intro{
+  height: 100%;
+  h1 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: -45%;
+    font-size: 4rem;
+  }
+  h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20%;
+    font-size: 3rem;
+  }
+  #introUp, #introDown {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 #homeBody, #aboutBody, #mediasBody {
   margin: 0;
@@ -41,12 +61,8 @@ a {
   }
 }
 #homeContainer {
+  //display: none;
   height: 100%;
-  #menuTextReveal {
-    text-transform: uppercase;
-    position: absolute;
-    top: 20%;
-  }
   #theMusicians {
     width: 80%;
     color: #000;
@@ -88,16 +104,16 @@ a {
     }
   }
   #homeNav {
+    display: flex;
     position: fixed;
     z-index: 999;
     top: 0;
-    display: flex;
     justify-content: space-around;
     width: 100%;
     font-size: 0.8rem;
     text-align: justify;
     line-height: 1.2;
-    color: #fff;
+    color: #000;
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
     -ms-transition: all 1s ease-in-out;
@@ -121,8 +137,14 @@ a {
   }
   #about{
     width: 90%;
+    margin-top: 180px;
+    text-align: center;
     h2 {
       text-transform: uppercase;
+      display: inline-block;
+      padding: 0 2%;
+      margin-bottom: 5%;
+      border: 1px solid #000;
     }
     img {
       display: block;
@@ -144,7 +166,7 @@ a {
     h2 {
       text-transform: uppercase;
     }
-    margin:5% auto 5% auto;
+    margin: 180px auto 5% auto;
     width: 80%;
     #news {
       width: 95%;
@@ -172,6 +194,7 @@ a {
   }
   #medias {
     width: 100%;
+    margin-top: 180px;
     #music {
       display: none;
       width: 50%;
@@ -203,12 +226,14 @@ a {
     }
   }
   #contact {
+    margin-top: 180px;
     text-align: center;
     h2, h3 {
       display: inline-block;
       text-align: center;
       text-transform: uppercase;
       padding: 0 2%;
+      margin-bottom: 5%;
       border: 1px solid #000;
     }
     ul {
