@@ -185,6 +185,13 @@ a {
         padding: 8px;
         display: inline-block;
         margin-right: 4%;
+
+        //**** SMARTPHONES LANDSCAPE ****
+        @media only screen and (min-width : 320px) {
+          font-size: 1rem;
+          text-align: left;
+          margin-bottom: 8%;
+        }
       }
     }
     #concerts {
@@ -201,6 +208,11 @@ a {
       margin-right: auto;
       margin-top: 4%;
       margin-bottom: 4%;
+
+      //**** SMARTPHONES PORTRAIT ****
+      @media only screen and (max-width: 420px) {
+        width: 90%;
+      }
     }
     #videos {
       display: none;
@@ -240,8 +252,21 @@ a {
       list-style: none;
       text-align: center;
       text-transform: uppercase;
+      padding: 0;
       i {
         margin: 0 1%;
+      }
+
+      //**** SMARTPHONES LANDSCAPE ****
+      @media only screen and (min-width : 321px) {
+        line-height: 2.5;
+      }
+
+      //**** SMARTPHONES PORTRAIT ****
+      @media only screen and (max-width: 420px) {
+        .fa-long-arrow-right {
+          display: none;
+        }
       }
     }
     #socialIcons {
@@ -253,6 +278,24 @@ a {
       margin-top: 4%;
       padding: 0;
       font-size: 1.4rem;
+
+      //*** LARGE SCREENS ****
+      @media only screen and (min-width : 1824px) {
+        width: 10%;
+      }
+
+      //**** SMARTPHONES LANDSCAPE ****
+      @media only screen and (min-width : 321px) {
+        width: 50%;
+      }
+
+      //**** SMARTPHONES PORTRAIT ****
+      @media only screen and (max-width: 420px) {
+        width: 50%;
+      }
+
+
+
     }
     #peopleWeLike {
       margin-top: 4%;
@@ -260,3 +303,5 @@ a {
     }
   }
 }
+
+
