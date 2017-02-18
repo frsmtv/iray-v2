@@ -14,7 +14,7 @@ html, body {
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
   color: #000;
-  background: #D8D9D1;
+  background: #fff;
 }
 a {
   color: inherit;
@@ -68,8 +68,8 @@ a {
 #homeBody {
   background: url("../img/photo-inside-disc.jpg");
   background-repeat: no-repeat;
-  background-position: center right;
-  background-size: contain;
+  background-position: fixed;
+  background-size: cover;
 }
 
 
@@ -184,20 +184,18 @@ a {
     margin-right: auto;
   }
   #newsConcerts {
-    padding: 2%;
+    padding: 5%;
     h2 {
       text-transform: uppercase;
     }
-    margin: 180px auto 5% auto;
-    width: 80%;
+    margin: 180px 0 5% 0;
+    width: 100%;
     #news {
       width: 95%;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       text-align: justify;
-      margin: 0 0 10% 0;
       p {
         padding: 2%;
-        background: rgba(255, 255, 255, 0.8);
       }
       img {
         float: right;
@@ -340,6 +338,9 @@ a {
       font-size: .6rem;
       letter-spacing: 2px;
       text-transform: uppercase;
+      img {
+        width: 100px;
+      }
     }
   }
 }
